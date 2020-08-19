@@ -1,0 +1,26 @@
+.intro {
+  background: url("../img/section1back.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.intro_title {
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.intro_ctt {
+  color: #000000;
+  text-align: center;
+  font-size: 3rem;
+}
+.intro_ctt_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.5);
+}
