@@ -2,6 +2,7 @@
   background: url("../img/section1back.jpg");
   background-size: cover;
   position: relative;
+  display: none;
 }
 
 .intro_title {

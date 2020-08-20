@@ -11,6 +11,11 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+}
+
 html {
   font-size: 10px;
 }
@@ -28,4 +33,16 @@ body {
 section {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro.showing,
+.portfolio.showing {
+  display: flex;
+}
+
+.about.showing {
+  display: block;
 }
