@@ -2,9 +2,9 @@ const intro = document.querySelector(".intro"),
   about = document.querySelector(".about"),
   portfolio = document.querySelector(".portfolio");
 
-const navBtn = document.querySelectorAll(".nav_btn");
+const section = document.querySelectorAll("section");
 
-const SHOWING = "showing";
+const navBtn = document.querySelectorAll(".nav_btn");
 
 /*
 function handleClick() {
@@ -22,18 +22,27 @@ function homeClick() {
   intro.classList.add(SHOWING);
   about.classList.remove(SHOWING);
   portfolio.classList.remove(SHOWING);
+  navBtn[0].style.color = "tomato";
+  navBtn[1].style.color = "#fff";
+  navBtn[2].style.color = "#fff";
 }
 
 function aboutClick() {
   intro.classList.remove(SHOWING);
   about.classList.add(SHOWING);
   portfolio.classList.remove(SHOWING);
+  navBtn[0].style.color = "#fff";
+  navBtn[1].style.color = "tomato";
+  navBtn[2].style.color = "#fff";
 }
 
 function portfolioClick() {
   intro.classList.remove(SHOWING);
   about.classList.remove(SHOWING);
   portfolio.classList.add(SHOWING);
+  navBtn[0].style.color = "#fff";
+  navBtn[1].style.color = "#fff";
+  navBtn[2].style.color = "tomato";
 }
 
 function init() {

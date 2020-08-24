@@ -2,7 +2,6 @@
   background: url("../img/section1back.jpg");
   background-size: cover;
   position: relative;
-  display: none;
 }
 
 .intro_title {
@@ -18,10 +17,13 @@
   text-align: center;
   font-size: 3rem;
 }
+
 .intro_ctt_box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.5);
+  padding: 3rem;
+  box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.5);
 }
