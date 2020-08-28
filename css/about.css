@@ -8,7 +8,13 @@
 
 .about_ctt_box {
   display: flex;
+  justify-content: space-between;
   height: 80%;
+}
+
+.about_ctt_lbox,
+.about_ctt_rbox {
+  position: relative;
 }
 
 .about_ctt {
@@ -18,6 +24,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.about_ctt:nth-child(2) {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background: url("../img/aboutme.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
 }
 
 .about_ctt img {
@@ -37,17 +53,89 @@
   border-radius: 50%;
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  position: absolute;
 }
 
-.about_ctt_text:hover {
-  animation: about 2s linear infinite;
+.about_ctt_lbox > .about_ctt > .about_ctt_text {
+  left: -200px;
 }
 
-@keyframes about {
+.about_ctt_rbox > .about_ctt > .about_ctt_text {
+  right: -200px;
+}
+
+.about_ctt_lbox > .about_ctt > .about_ctt_text:first-child.show {
+  animation: about1 2s ease-in-out forwards 1s;
+}
+
+.about_ctt_lbox > .about_ctt > .about_ctt_text:nth-child(2).show {
+  animation: about2 2s ease-in-out forwards 1s;
+}
+
+.about_ctt_lbox > .about_ctt > .about_ctt_text:last-child.show {
+  animation: about3 2s ease-in-out forwards 1s;
+}
+
+.about_ctt_rbox > .about_ctt > .about_ctt_text:first-child.show {
+  animation: about4 2s ease-in-out forwards 1s;
+}
+.about_ctt_rbox > .about_ctt > .about_ctt_text:nth-child(2).show {
+  animation: about5 2s ease-in-out forwards 1s;
+}
+.about_ctt_rbox > .about_ctt > .about_ctt_text:last-child.show {
+  animation: about6 2s ease-in-out forwards 1s;
+}
+
+@keyframes about1 {
+  from {
+    transfrom: none;
+  }
+  to {
+    transform: translate(25vw, 25vh);
+  }
+}
+
+@keyframes about2 {
+  from {
+    transfrom: none;
+  }
+  to {
+    transform: translate(25vw);
+  }
+}
+
+@keyframes about3 {
   from {
     transform: none;
   }
   to {
-    transform: rotateY(360deg);
+    transform: translate(25vw, -25vh);
+  }
+}
+
+@keyframes about4 {
+  from {
+    transfrom: none;
+  }
+  to {
+    transform: translate(-25vw, -25vh);
+  }
+}
+
+@keyframes about5 {
+  from {
+    transfrom: none;
+  }
+  to {
+    transform: translate(-25vw);
+  }
+}
+
+@keyframes about6 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate(-25vw, 25vh);
   }
 }
