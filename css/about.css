@@ -65,25 +65,25 @@
 }
 
 .about_ctt_lbox > .about_ctt > .about_ctt_text:first-child.show {
-  animation: about1 2s ease-in-out forwards 1s;
+  animation: about1 1.5s ease-in-out forwards 0.5s;
 }
 
 .about_ctt_lbox > .about_ctt > .about_ctt_text:nth-child(2).show {
-  animation: about2 2s ease-in-out forwards 1s;
+  animation: about2 1.5s ease-in-out forwards 0.5s;
 }
 
 .about_ctt_lbox > .about_ctt > .about_ctt_text:last-child.show {
-  animation: about3 2s ease-in-out forwards 1s;
+  animation: about3 1.5s ease-in-out forwards 0.5s;
 }
 
 .about_ctt_rbox > .about_ctt > .about_ctt_text:first-child.show {
-  animation: about4 2s ease-in-out forwards 1s;
+  animation: about4 1.5s ease-in-out forwards 0.5s;
 }
 .about_ctt_rbox > .about_ctt > .about_ctt_text:nth-child(2).show {
-  animation: about5 2s ease-in-out forwards 1s;
+  animation: about5 1.5s ease-in-out forwards 0.5s;
 }
 .about_ctt_rbox > .about_ctt > .about_ctt_text:last-child.show {
-  animation: about6 2s ease-in-out forwards 1s;
+  animation: about6 1.5s ease-in-out forwards 0.5s;
 }
 
 @keyframes about1 {

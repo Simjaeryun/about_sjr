@@ -19,14 +19,15 @@
 .portfolio_title {
   font-size: 5rem;
   font-weight: 900;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 
 .portfolio_container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
+  width: 100%;
 }
 
 .portfolio_ctt_box_container {
