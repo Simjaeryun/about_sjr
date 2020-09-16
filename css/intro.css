@@ -1,6 +1,12 @@
-.intro {
+/* .intro {
   background: url("../img/section1back.jpg");
   background-size: cover;
+  position: relative;
+} */
+
+.intre {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -26,4 +32,12 @@
   background: rgba(255, 255, 255, 0.5);
   padding: 3rem;
   box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.video-bg {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
