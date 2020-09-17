@@ -7,7 +7,7 @@
 }*/
 
 function aboutClick() {
-  const aboutCtt = document.querySelectorAll(".about_ctt_text");
+  const aboutCtt = document.querySelectorAll(".about_ctt_card");
   if (!document.querySelector(".show")) {
     aboutCtt[0].classList.add("show");
     aboutCtt[1].classList.add("show");
@@ -19,7 +19,7 @@ function aboutClick() {
 }
 
 function aboutRemove() {
-  const aboutCtt = document.querySelectorAll(".about_ctt_text");
+  const aboutCtt = document.querySelectorAll(".about_ctt_card");
   if (document.querySelector(".show")) {
     aboutCtt[0].classList.remove("show");
     aboutCtt[1].classList.remove("show");

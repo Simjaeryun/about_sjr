@@ -6,6 +6,8 @@ const section = document.querySelectorAll("section");
 
 const navBtn = document.querySelectorAll(".nav_btn");
 
+const SHOWING = "showing";
+
 /*
 function handleClick() {
   if (window.pageYOffset == intro.offsetTop) {

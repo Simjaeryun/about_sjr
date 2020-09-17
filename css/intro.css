@@ -36,8 +36,9 @@
 
 .video-bg {
   width: auto;
-  height: auto;
+  height: 80rem;
   position: absolute;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
 }
