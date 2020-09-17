@@ -73,35 +73,10 @@
   flex-direction: column;
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
   transform: rotateY(180deg);
+  font-weight: 700;
 }
 
-.about_ctt_text_img {
-  background: url("../img/js-logo.png");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-}
-
-.about_ctt_text_gauge {
-  width: 70%;
-  display: flex;
-
-  position: relative;
-}
-
-.about_ctt_text_gauge_progress {
-  top: -10px;
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.about_ctt_text_gauge_progress:last-child {
-  width: 80%;
-  background: tomato;
-}
-
+/*card 이미지와 마우스 hover시에 뒤집히기*/
 .about_ctt_card:hover.show {
   animation: about_ctt_3d 1.5s ease forwards;
 }
@@ -132,86 +107,63 @@
   background-position: center;
 }
 
-/* .about_ctt_lbox > .about_ctt > .about_ctt_card {
-  left: -200px;
+/* card안에 이미지 */
+.about_ctt_lbox .about_ctt_card:first-child .about_ctt_text_img {
+  background: url("../img/js-logo.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
 }
 
-.about_ctt_rbox > .about_ctt > .about_ctt_card {
-  right: -200px;
+.about_ctt_lbox .about_ctt_card:nth-child(2) .about_ctt_text_img {
+  background: url("../img/css-logo.png");
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
 }
 
-.about_ctt_lbox > .about_ctt > .about_ctt_card:first-child.show {
-  animation: about1 1.5s ease-in-out forwards 0.5s;
+.about_ctt_lbox .about_ctt_card:last-child .about_ctt_text_img {
+  background: url("../img/html-logo.png");
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
 }
 
-.about_ctt_lbox > .about_ctt > .about_ctt_card:nth-child(2).show {
-  animation: about2 1.5s ease-in-out forwards 0.5s;
+/* card 안에 게이지*/
+.about_ctt_lbox
+  .about_ctt_card:first-child
+  .about_ctt_text_gauge_progress:last-child {
+  width: 70%;
 }
 
-.about_ctt_lbox > .about_ctt > .about_ctt_card:last-child.show {
-  animation: about3 1.5s ease-in-out forwards 0.5s;
+.about_ctt_lbox
+  .about_ctt_card:nth-child(2)
+  .about_ctt_text_gauge_progress:last-child {
+  width: 90%;
 }
 
-.about_ctt_rbox > .about_ctt > .about_ctt_card:first-child.show {
-  animation: about4 1.5s ease-in-out forwards 0.5s;
-}
-.about_ctt_rbox > .about_ctt > .about_ctt_card:nth-child(2).show {
-  animation: about5 1.5s ease-in-out forwards 0.5s;
-}
-.about_ctt_rbox > .about_ctt > .about_ctt_card:last-child.show {
-  animation: about6 1.5s ease-in-out forwards 0.5s;
+.about_ctt_lbox
+  .about_ctt_card:last-child
+  .about_ctt_text_gauge_progress:last-child {
+  width: 100%;
 }
 
-@keyframes about1 {
-  from {
-    transfrom: none;
-  }
-  to {
-    transform: translate(25vw, 25vh);
-  }
+.about_ctt_text_gauge {
+  width: 70%;
+  display: flex;
+  position: relative;
 }
 
-@keyframes about2 {
-  from {
-    transfrom: none;
-  }
-  to {
-    transform: translate(25vw);
-  }
+.about_ctt_text_gauge_progress {
+  top: -10px;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-@keyframes about3 {
-  from {
-    transform: none;
-  }
-  to {
-    transform: translate(25vw, -25vh);
-  }
+.about_ctt_text_gauge_progress:last-child {
+  background: tomato;
 }
-
-@keyframes about4 {
-  from {
-    transfrom: none;
-  }
-  to {
-    transform: translate(-25vw, -25vh);
-  }
-}
-
-@keyframes about5 {
-  from {
-    transfrom: none;
-  }
-  to {
-    transform: translate(-25vw);
-  }
-}
-
-@keyframes about6 {
-  from {
-    transform: none;
-  }
-  to {
-    transform: translate(-25vw, 25vh);
-  }
-} */
