@@ -19,3 +19,7 @@
 .nav_btn:hover {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
+.nav_btn.active {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
