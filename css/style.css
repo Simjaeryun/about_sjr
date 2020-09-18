@@ -9,6 +9,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -53,15 +57,49 @@ nav {
   color: tomato;
 }
 
-@media (max-width: 970px) {
-  html {
-    font-size: 8px;
+@media (max-width: 1230px) {
+  .video-bg {
+    display: none;
+  }
+
+  .intro {
+    background: url("../img/section1back.jpg");
+    background-size: cover;
+    position: relative;
   }
 }
 
-@media (max-width: 754px) {
+@media (max-width: 1100px) {
+  .about_ctt_imgbox {
+    display: none;
+  }
+  .about_ctt_box {
+    justify-content: center;
+  }
 }
 
-::-webkit-scrollbar {
-  display: none;
+@media (max-width: 658px) {
+  .about_ctt_box {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 850px) {
+  .portfolio_ctt_box {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .portfolio_ctt_text_ctt {
+    display: none;
+  }
+
+  .portfolio_ctt_img {
+    width: 100%;
+  }
+
+  .portfolio_ctt_text_title {
+    text-align: center;
+  }
 }
