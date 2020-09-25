@@ -112,10 +112,46 @@ nav {
 }
 
 @media (max-width: 490px) {
+  .intro_title {
+    font-size: 2rem;
+  }
+
+  .intro_ctt_box {
+    display: flex;
+    align-items: center;
+  }
+
+  .intro_ctt {
+    display: none;
+  }
+
+  .about_ctt_card {
+    width: 15rem;
+    height: 15rem;
+  }
   .about_ctt_box {
     flex-direction: column;
   }
   .about_ctt_rbox {
     display: none;
+  }
+  .about_ctt {
+    justify-content: center;
+  }
+
+  .about_ctt_lbox .about_ctt_card {
+    margin-top: 25px;
+  }
+  .about_ctt_lbox .about_ctt_card:first-child {
+    margin: 0;
+  }
+
+  .portfolio_ctt_box:first-child > .portfolio_ctt_img img {
+    width: 180px;
+    height: 300px;
+  }
+
+  .portfolio_title {
+    margin: 0;
   }
 }
