@@ -90,9 +90,16 @@ nav {
     justify-content: center;
     flex-direction: column;
   }
+  .portfolio_ctt_text_box {
+    padding: 0;
+  }
 
   .portfolio_ctt_text_ctt {
     display: none;
+  }
+
+  .portfolio_ctt_text_ctt:last-child {
+    display: block;
   }
 
   .portfolio_ctt_img {
