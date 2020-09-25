@@ -78,12 +78,6 @@ nav {
   }
 }
 
-@media (max-width: 658px) {
-  .about_ctt_box {
-    justify-content: space-around;
-  }
-}
-
 @media (max-width: 850px) {
   .portfolio_ctt_box {
     align-items: center;
@@ -108,5 +102,20 @@ nav {
 
   .portfolio_ctt_text_title {
     text-align: center;
+  }
+}
+
+@media (max-width: 658px) {
+  .about_ctt_box {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 490px) {
+  .about_ctt_box {
+    flex-direction: column;
+  }
+  .about_ctt_rbox {
+    display: none;
   }
 }
