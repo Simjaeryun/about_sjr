@@ -20,6 +20,22 @@
   font-size: 5rem;
   font-weight: 900;
   margin-bottom: 7rem;
+  position: relative;
+}
+
+.portfolio_title span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: tomato;
+  top: 0;
+  left: 22rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .portfolio_container {

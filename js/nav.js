@@ -24,7 +24,7 @@ function homeClick() {
   intro.classList.add(SHOWING);
   about.classList.remove(SHOWING);
   portfolio.classList.remove(SHOWING);
-  navBtn[0].style.color = "tomato";
+  navBtn[0].style.color = "skyblue";
   navBtn[1].style.color = "#fff";
   navBtn[2].style.color = "#fff";
 }
@@ -34,7 +34,7 @@ function aboutClick() {
   about.classList.add(SHOWING);
   portfolio.classList.remove(SHOWING);
   navBtn[0].style.color = "#fff";
-  navBtn[1].style.color = "tomato";
+  navBtn[1].style.color = "skyblue";
   navBtn[2].style.color = "#fff";
 }
 
@@ -44,7 +44,7 @@ function portfolioClick() {
   portfolio.classList.add(SHOWING);
   navBtn[0].style.color = "#fff";
   navBtn[1].style.color = "#fff";
-  navBtn[2].style.color = "tomato";
+  navBtn[2].style.color = "skyblue";
 }
 
 function init() {

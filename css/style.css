@@ -53,10 +53,6 @@ nav {
   z-index: 99;
 }
 
-.nav_btn:first-child {
-  color: tomato;
-}
-
 @media (max-width: 1230px) {
   .video-bg {
     display: none;

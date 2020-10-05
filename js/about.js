@@ -36,7 +36,6 @@ function init() {
   navBtn[2].addEventListener("click", aboutRemove);
   navBtn[3].addEventListener("click", aboutRemove);
   navBtn[4].addEventListener("click", aboutRemove);
-  navBtn[5].addEventListener("click", aboutRemove);
 }
 
 init();

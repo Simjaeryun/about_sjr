@@ -36,9 +36,18 @@ function prevClick() {
   }
 }
 
+function portfolioLength() {
+  const porlength = document.querySelectorAll(".portfolio_ctt_box");
+  const title = document.querySelector(".portfolio_title>span");
+  const navTitle = document.querySelectorAll(".nav_btn");
+  title.innerHTML = porlength.length;
+  navTitle[2].querySelector("span").innerHTML = porlength.length;
+}
+
 function init() {
   nextBtn.addEventListener("click", nextClick);
   prevBtn.addEventListener("click", prevClick);
+  portfolioLength();
 }
 
 init();

@@ -4,12 +4,16 @@
   align-items: center;
   position: fixed;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   width: 100%;
   height: 6rem;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.nav_btn:first-child {
+  color: skyblue;
 }
 
 .nav_btn {
@@ -22,4 +26,23 @@
 
 .nav_btn.active {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav_btn:nth-child(3) {
+  position: relative;
+}
+
+.nav_btn:nth-child(3) span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: tomato;
+  top: -1rem;
+  left: 10.5rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }

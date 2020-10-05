@@ -88,6 +88,7 @@
   }
 }
 
+/* 왼쪽 카드들 이미지 */
 .about_ctt_lbox > .about_ctt .about_ctt_card:first-child .about_ctt_img {
   background: url("../img/js-logo.png");
   background-size: cover;
@@ -105,7 +106,27 @@
   background-position: center;
 }
 
-/* card안에 이미지 */
+/* 오른쪽 카드들 이미지  */
+
+.about_ctt_rbox > .about_ctt .about_ctt_card:first-child .about_ctt_img {
+  background: url("../img/nodejs-logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.about_ctt_rbox > .about_ctt .about_ctt_card:nth-child(2) .about_ctt_img {
+  background: url("../img/react-logo.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.about_ctt_rbox > .about_ctt .about_ctt_card:last-child .about_ctt_img {
+  background: url("../img/html-logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* 왼쪾card안에 이미지 */
 .about_ctt_lbox .about_ctt_card:first-child .about_ctt_text_img {
   background: url("../img/js-logo.png");
   background-size: cover;
@@ -122,6 +143,29 @@
 }
 
 .about_ctt_lbox .about_ctt_card:last-child .about_ctt_text_img {
+  background: url("../img/html-logo.png");
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+/* 오른쪽 card안에 이미지 */
+.about_ctt_rbox .about_ctt_card:first-child .about_ctt_text_img {
+  background: url("../img/nodejs-logo.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.about_ctt_rbox .about_ctt_card:nth-child(2) .about_ctt_text_img {
+  background: url("../img/react-logo.png");
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+.about_ctt_rbox .about_ctt_card:last-child .about_ctt_text_img {
   background: url("../img/html-logo.png");
   background-size: cover;
   background-position: center;
@@ -164,4 +208,10 @@
 
 .about_ctt_text_gauge_progress:last-child {
   background: tomato;
+}
+
+.about_ctt_text_modify {
+  margin-top: -50px;
+  line-height: 20px;
+  text-align: center;
 }
