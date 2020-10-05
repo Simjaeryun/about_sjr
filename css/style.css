@@ -105,6 +105,7 @@ nav {
   }
 }
 
+/*모바일 일단 생략*/
 @media (max-width: 658px) {
   .about_ctt_box {
     justify-content: space-around;
@@ -114,11 +115,6 @@ nav {
 @media (max-width: 490px) {
   .intro_title {
     font-size: 2rem;
-  }
-
-  .intro_ctt_box {
-    display: flex;
-    align-items: center;
   }
 
   .intro_ctt {
