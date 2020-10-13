@@ -1,8 +1,9 @@
 @import "reset.css";
-@import "about.css";
+@import "skill.css";
 @import "nav.css";
 @import "intro.css";
 @import "portfolio.css";
+@import "about.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 html,
 body {
@@ -46,8 +47,9 @@ nav {
 }
 
 .intro.showing,
+.about.showing,
 .portfolio.showing,
-.about.showing {
+.skill.showing {
   opacity: 1;
   transition: opacity 1s ease-in-out;
   z-index: 99;
@@ -66,10 +68,10 @@ nav {
 }
 
 @media (max-width: 1100px) {
-  .about_ctt_imgbox {
+  .skill_ctt_imgbox {
     display: none;
   }
-  .about_ctt_box {
+  .skill_ctt_box {
     justify-content: center;
   }
 }
@@ -103,7 +105,7 @@ nav {
 
 /*모바일 일단 생략*/
 @media (max-width: 658px) {
-  .about_ctt_box {
+  .skill_ctt_box {
     justify-content: space-around;
   }
 }
@@ -117,24 +119,24 @@ nav {
     display: none;
   }
 
-  .about_ctt_card {
+  .skill_ctt_card {
     width: 15rem;
     height: 15rem;
   }
-  .about_ctt_box {
+  .skill_ctt_box {
     flex-direction: column;
   }
-  .about_ctt_rbox {
+  .skill_ctt_rbox {
     display: none;
   }
-  .about_ctt {
+  .skill_ctt {
     justify-content: center;
   }
 
-  .about_ctt_lbox .about_ctt_card {
+  .skill_ctt_lbox .skill_ctt_card {
     margin-top: 25px;
   }
-  .about_ctt_lbox .about_ctt_card:first-child {
+  .skill_ctt_lbox .skill_ctt_card:first-child {
     margin: 0;
   }
 

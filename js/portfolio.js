@@ -41,7 +41,7 @@ function portfolioLength() {
   const title = document.querySelector(".portfolio_title>span");
   const navTitle = document.querySelectorAll(".nav_btn");
   title.innerHTML = porlength.length;
-  navTitle[2].querySelector("span").innerHTML = porlength.length;
+  navTitle[3].querySelector("span").innerHTML = porlength.length;
 }
 
 function init() {
