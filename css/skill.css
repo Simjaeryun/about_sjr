@@ -75,7 +75,7 @@
 }
 
 /*card 이미지와 마우스 hover시에 뒤집히기*/
-.skill_ctt_card:hover.show {
+.skill_ctt_card:hover {
   animation: skill_ctt_3d 1.5s ease forwards;
 }
 
