@@ -21,6 +21,16 @@ function handleClick() {
 }
 */
 
+function handleIntro() {
+  intro.style.backgroundColor = "black";
+}
+
+function timeOutIntro() {
+  if (intro.style.backgroundColor == "black") {
+    intro.style.backgroundColor = "white";
+  }
+}
+
 function homeClick() {
   intro.classList.add(SHOWING);
   about.classList.remove(SHOWING);
@@ -70,6 +80,8 @@ function init() {
   navBtn[1].addEventListener("click", aboutClick);
   navBtn[2].addEventListener("click", skillClick);
   navBtn[3].addEventListener("click", portfolioClick);
+  handleIntro();
+  setTimeout(timeOutIntro, 6500);
 }
 
 init();
